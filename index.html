@@ -629,7 +629,8 @@ function renderPosts(){
 
 const selected=data.posts
 .filter(p=>year==="all"||p[1].endsWith(year))
-.sort((a,b)=>b[5]-a[5]);
+.sort((a,b)=>b[5]-a[5])
+.slice(0,10);
 
 document.getElementById("posts").innerHTML=
 selected.map((p,i)=>`

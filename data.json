@@ -1,76 +1,46 @@
 {
   "annual": {
     "2025": {
-      "impressions": 10010,
-      "clicks": 367,
-      "rate": 0.031055010105645823,
+      "impressions": 5589,
+      "clicks": 154,
+      "rate": 0.02855596517415982,
       "conversions": 0,
-      "days": 213,
-      "reactions": 47,
-      "comments": 3,
+      "days": 128,
+      "reactions": 33,
+      "comments": 2,
       "shares": 2
     },
-    "2026": {
-      "impressions": 21022,
-      "clicks": 860,
-      "rate": 0.036711487185406844,
-      "conversions": 0,
-      "days": 152,
-      "reactions": 117,
-      "comments": 1,
-      "shares": 3
-    },
     "all": {
-      "impressions": 31032,
-      "clicks": 1227,
-      "rate": 0.033410584122423016,
+      "impressions": 5589,
+      "clicks": 154,
+      "rate": 0.02855596517415982,
       "conversions": 0,
-      "days": 365,
-      "reactions": 164,
-      "comments": 4,
-      "shares": 5
+      "days": 128,
+      "reactions": 33,
+      "comments": 2,
+      "shares": 2
     }
   },
   "months": [
     [
-      "Jun 25",
-      2025,
-      1996,
-      95,
-      9,
-      0,
-      0,
-      0.03679612779439909
-    ],
-    [
-      "Jul 25",
-      2025,
-      1385,
-      88,
-      1,
-      1,
-      0,
-      0.04213071794535607
-    ],
-    [
       "Ago 25",
       2025,
-      1136,
-      34,
+      98,
       4,
       0,
       0,
-      0.023733409590429886
+      0,
+      0.024479166666666666
     ],
     [
       "Sep 25",
       2025,
       2091,
       44,
-      16,
+      19,
       1,
       2,
-      0.022259209520247618
+      0.02225920952024762
     ],
     [
       "Oct 25",
@@ -80,737 +50,213 @@
       11,
       0,
       0,
-      0.02924763015801654
+      0.029247630158016538
     ],
     [
       "Nov 25",
       2025,
-      1225,
+      1224,
       40,
-      5,
+      6,
       1,
       0,
-      0.04236341039537117
+      0.04237282863778224
     ],
     [
       "Dic 25",
       2025,
-      675,
+      674,
       17,
       1,
       0,
       0,
-      0.021306011628662778
-    ],
-    [
-      "Ene 26",
-      2026,
-      3700,
-      231,
-      6,
-      0,
-      0,
-      0.05201836379763608
-    ],
-    [
-      "Feb 26",
-      2026,
-      3545,
-      94,
-      12,
-      0,
-      0,
-      0.02813664776145448
-    ],
-    [
-      "Mar 26",
-      2026,
-      3528,
-      101,
-      14,
-      0,
-      0,
-      0.027452307365232773
-    ],
-    [
-      "Abr 26",
-      2026,
-      5441,
-      176,
-      16,
-      0,
-      0,
-      0.029255412644893692
-    ],
-    [
-      "May 26",
-      2026,
-      4393,
-      239,
-      58,
-      1,
-      1,
-      0.04432123534614289
-    ],
-    [
-      "Jun 26",
-      2026,
-      415,
-      19,
-      11,
-      0,
-      2,
-      0.07710843373493977
+      0.02137583427913059
     ]
   ],
   "posts": [
     [
-      "🚀 ¡ESTAMOS CONTRATANDO! Backend Developer Golang (SSR - SR)\n\nEn WorkCapit buscamos desarrolladores backend para sumarse a importantes proyectos de un cliente clave del sector financiero, diseñando soluciones escalables y dinámicas. 🧠✨\n\n📍 Chile | 💼 100% Remoto | ⏰ Tiempo completo (Contrato por Obra)\n\n🎯 El Reto:\nDesarrollar y mantener microservicios y APIs REST robustas.\nImplementar integraciones con bases de datos relacionales y Redis.\nDocumentar servicios con Swagger/OpenAPI y trabajar con Docker.\nColaborar en entornos ágiles y proponer mejoras de rendimiento.\n\n🛠️ ¿Qué necesitas?\nExperiencia sólida en desarrollo backend con Golang.\nExperiencia construyendo microservicios y APIs REST.\nManejo de bases de datos relacionales (Oracle, Postgres o MySQL).\nValoramos mucho: Conocimiento en Arquitectura Limpia/Hexagonal, Kafka, RabbitMQ o Kubernetes.\n\n📩 ¿Es para ti? ¡Postúlate ya enviándonos un mensaje directo (DM) con tu CV actualizado!\n¿Conoces al desarrollador ideal? ¡Etiquétalo en los comentarios! 👇\n\n#GolangJobs #BackendDeveloper #TrabajoRemoto #ChileTech #Golang #WorkCapit",
-      "01/06/2026",
-      "Orgánico",
-      574,
-      17,
-      0.05749128758907318
-    ],
-    [
-      "En WorkCapit transformamos estas debilidades en tu mayor fortaleza: reducimos tus tiempos de selección un 50%, elevamos la precisión de los perfiles y blindamos tu estabilidad manteniendo la rotación al mínimo (solo un 5%). 🎯✨\n\n🔗 Agenda una sesión estratégica con nosotros a través de un mensaje directo y diseñemos tu plan de modernización.\n\n#ConsultoriaTI #TransformacionDigital #LiderazgoTecnológico ",
-      "30/05/2026",
-      "Orgánico · Vídeo",
-      181,
-      7,
-      0.05524861812591553
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Desarrollador Fullstack Senior | Angular | BFF | Node.js en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "30/05/2026",
-      "Orgánico",
-      338,
-      12,
-      0.044378697872161865
-    ],
-    [
-      "En WorkCapit, sabemos que el éxito de una consultoría no se mide por las promesas técnicas, sino por el impacto real en la operación. 📈\n\nHoy queremos compartir con orgullo lo que opinan los líderes de operaciones, tecnología y talento humano que ya transformaron su forma de trabajar a nuestro lado.\n\n#CasosDeÉxito #ConsultoriaTI #LiderazgoTecnológico #TransformacionDigital #ClientesWorkCapit",
-      "29/05/2026",
-      "Orgánico",
-      161,
-      58,
-      0.38509318232536316
-    ],
-    [
-      "¿Tu infraestructura de TI está lista para jugar en las grandes ligas o sigue atrapada en el calentamiento operativo? 🤖 🦾 \n\nLiderar un equipo de tecnología en un mercado tan competitivo exige precisión. Sin embargo, muchas empresas siguen perdiendo el control de su headcount y procesos críticos por miedo a delegarlo. \n\nGestionar tu operación así es como salir a jugar una final del mundo... sin haber entrenado la estrategia. \n\nEn WorkCapit cambiamos las reglas del juego. Construimos soluciones escalables y diseñamos la táctica para que dejes atrás el caos. \n\n#TransformacionDigital #ConsultoriaTI #Productividad #Innovacion #Management #EstrategiaEstructura #WorkCapit",
-      "28/05/2026",
-      "Orgánico",
-      220,
-      50,
-      0.25
-    ],
-    [
-      "Esta edición 2026 de la Boston Tech Week está dejando algo muy claro.⚠️\n\n⚡Eficiencia Operativa como Prioridad: La tecnología de vanguardia ya no se mide por lo \"novedosa\", sino por su capacidad de integrarse sin fricción en las empresas para reducir costos y acelerar el time-to-market.\n\nEn WorkCapIT no solo observamos estas tendencias globales desde la distancia; las analizamos y las conectamos de manera directa con los objetivos de tu negocio. 🎯\n\n📩 Déjanos un mensaje, hablemos de tus desafíos actuales y diseñemos tu próxima gran jugada tecnológica.\n\n#BostonTechWeek #Innovacion2026 #InteligenciaArtificial #CloudComputing #TransformacionDigital #EstrategiaTI #WorkCapIT",
-      "27/05/2026",
-      "Orgánico",
-      258,
-      7,
-      0.05038759857416153
-    ],
-    [
-      "Menos tiempos de búsqueda, perfiles mucho más precisos y retención garantizada. Así de simple. 🎯\n\nAyudamos a las organizaciones a optimizar sus estructuras de headcount mediante un modelo tecnológico, ágil y a la medida. 💼\n\n🔸-50% en tiempos de selección.\n🔸+50% en precisión de perfiles.\n🔸 5% de rotación de talento.\n\nMenos fricción operativa, más tiempo para hacer crecer tu negocio. 🚀\n\n📲 ¿Quieres ver cómo lo hacemos? Déjanos tus datos y un especialista de nuestro equipo te contactará hoy.\n\n#EstrategiaDeTalento #RRHH #Management #Productividad",
-      "27/05/2026",
-      "Orgánico · Vídeo",
-      146,
-      6,
-      0.0890410989522934
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de QA Engineer en Bogota, D.C., Capital District. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "27/05/2026",
-      "Orgánico",
-      440,
-      25,
-      0.06590908765792847
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Arquitecto de software en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "22/05/2026",
-      "Orgánico",
-      441,
-      21,
-      0.04988662153482437
-    ],
-    [
-      "🚀¡Feliz Día del Trabajador de las Telecomunicaciones en Perú! \n\nHoy rendimos un merecido homenaje a los profesionales que, detrás de cada pantalla y conexión, construyen, operan y mantienen la infraestructura digital que mueve el país. 📡🛠️\n\nA todos los ingenieros, técnicos y especialistas que hacen posible que el Perú siga conectado al futuro: ¡Gracias por su dedicación, precisión y compromiso! 💻🔥\n\n#Telecomunicaciones #TelecomPerú #InfraestructuraDigital #Conectividad #Tecnología #TalentoTécnico #TelecomunicacionesPerú #DíaDelTrabajadorDeTelecomunicaciones",
-      "19/05/2026",
-      "Orgánico",
-      270,
-      1,
-      0.011111111380159855
-    ],
-    [
-      "La IA ejecuta. El humano decide. 🤖⚖️\n\nEn 2026, el éxito tecnológico no se mide en gigas, sino en criterio: 10% es técnica y 90% es humanidad. 🧠✨\n\nSomos tu Socio en la Innovación, conectando el potencial de la tecnología con el poder del ingenio humano. Cuéntanos: ¿Crees que el criterio humano sigue siendo el motor del éxito o la IA ya tomó el control? 👇💬\n\n#IA2026 #TalentoHumano #WorkCapIT #LiderazgoTI #TransformaciónDigital",
-      "15/05/2026",
-      "Orgánico",
-      250,
-      8,
-      0.05999999865889549
-    ],
-    [
-      "¡Feliz Día de la Ingeniería en Chile! \n\nHoy rendimos homenaje a quienes, con lógica, ingenio y precisión, construyen los cimientos del futuro en nuestra industria. 🏗️📐\n\nEn WorkCapIT, llevamos la ingeniería en nuestro ADN. 🧬 No solo localizamos expertos; conectamos la mente técnica con la visión estratégica para transformar organizaciones y llevarlas al siguiente nivel. 💡📈\n\n¡Saludamos a todos los ingenieros e ingenieras que hacen posible lo imposible! 🛠️✨\n\n#DíaDeLaIngeniería #IngenieríaChile #WorkCapIT #TalentoTécnico #Innovación #MenteEstratégica #HeadhuntingIT #IngenierosChile #TransformaciónDigital #ADNWorkCapIT",
-      "14/05/2026",
-      "Orgánico",
-      369,
-      7,
-      0.056910570710897446
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Analista Contable en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "09/05/2026",
-      "Orgánico",
-      446,
-      14,
-      0.04035874456167221
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Arquitecto de Datos en Medellín, Antioquia. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "06/05/2026",
-      "Orgánico",
-      384,
-      11,
-      0.03125
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Platform Engineer Multi-Cloud en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "25/04/2026",
-      "Orgánico",
-      528,
-      21,
-      0.0416666679084301
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Arquitecto software en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "18/04/2026",
-      "Orgánico",
-      453,
-      15,
-      0.0397351011633873
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Developer ETL (PowerCenter) en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "16/04/2026",
-      "Orgánico",
-      530,
-      17,
-      0.03396226465702057
-    ],
-    [
-      "Buscamos personal (#hiring) para un puesto de Consultor de SAP SD en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "11/04/2026",
-      "Orgánico",
-      355,
-      10,
-      0.030985916033387184
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de SRE (Site Reliability Engineer) en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "10/04/2026",
-      "Orgánico",
-      522,
-      17,
-      0.04406130313873291
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Ingeniero de Riesgo Operacional TI en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "09/04/2026",
-      "Orgánico",
-      696,
-      41,
-      0.06465516984462738
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Arquitecto de Soluciones SSR en Medellín, Antioquia. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "07/04/2026",
-      "Orgánico",
-      656,
-      23,
-      0.041158538311719894
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Arquitecto de datos en Medellín, Antioquia. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "02/04/2026",
-      "Orgánico",
-      457,
-      8,
-      0.021881837397813797
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Ingeniero de Calidad en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "29/03/2026",
-      "Orgánico",
-      602,
-      29,
-      0.049833886325359344
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Campaign Analyst en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "28/03/2026",
-      "Orgánico",
-      448,
-      21,
-      0.0491071417927742
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Ingeniero Automatizador en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "26/03/2026",
-      "Orgánico",
-      525,
-      25,
-      0.04952380806207657
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Desarrollador Mobile FullStack en Lima. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "24/03/2026",
-      "Orgánico",
-      462,
-      13,
-      0.03030303120613098
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de DevSecOps en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "10/03/2026",
-      "Orgánico",
-      495,
-      9,
-      0.024242423474788666
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de QA Engineer en Lima. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "06/03/2026",
-      "Orgánico",
-      409,
-      3,
-      0.012224938720464706
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Growth TI en Bogota, D.C., Capital District. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "05/03/2026",
-      "Orgánico",
-      557,
-      11,
-      0.028725314885377884
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de DataOps GCP en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "01/03/2026",
-      "Orgánico",
-      345,
-      4,
-      0.017391303554177284
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Full Stack Developer (React + Node.js + AWS) en Lima. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "27/02/2026",
-      "Orgánico",
-      416,
-      17,
-      0.045673076063394547
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Account Manager TI en Lima. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "22/02/2026",
-      "Orgánico",
-      391,
-      19,
-      0.05626598373055458
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Devops OCI-Azure en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "17/02/2026",
-      "Orgánico",
-      289,
-      1,
-      0.0069204154424369335
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Data Engineer GCP (W-ID-0183-4) en Bogota, D.C., Capital District. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "14/02/2026",
-      "Orgánico",
-      285,
-      5,
-      0.024561403319239616
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Supervisor de proyectos en Ate. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "13/02/2026",
-      "Orgánico",
-      359,
-      6,
-      0.022284122183918953
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Ingeniero de datos en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "12/02/2026",
-      "Orgánico",
-      446,
-      7,
-      0.020179372280836105
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Diseñador industrial en Ate. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "07/02/2026",
-      "Orgánico",
-      287,
-      14,
-      0.05226480960845947
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Data Engineer en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "05/02/2026",
-      "Orgánico",
-      393,
-      16,
-      0.04325699806213379
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Data Engineer GCP (W-ID-0183-3) en Bogota, D.C., Capital District. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "04/02/2026",
-      "Orgánico",
-      546,
-      11,
-      0.025641025975346565
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Especialista DLP (Data Loss Prevention) en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "03/02/2026",
-      "Orgánico",
-      221,
-      3,
-      0.018099548295140266
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Ingeniero de datos en Lima. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "31/01/2026",
-      "Orgánico",
-      401,
-      10,
-      0.03241895139217377
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Desarrollador Backend en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "30/01/2026",
-      "Orgánico",
-      402,
-      21,
-      0.05472636967897415
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Devops OCI-Azure en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "29/01/2026",
-      "Orgánico",
-      255,
-      3,
-      0.01568627543747425
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Data Engineer en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "28/01/2026",
-      "Orgánico",
-      479,
-      22,
-      0.04801670089364052
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Desarrollador Full Stack en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "27/01/2026",
-      "Orgánico",
-      376,
-      21,
-      0.058510638773441315
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Data Engineer (W-ID-0183-2) en Bogota, D.C., Capital District. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "23/01/2026",
-      "Orgánico",
-      444,
-      16,
-      0.04054053872823715
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Data Engineer (W-ID-0183) en Colombia. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "17/01/2026",
-      "Orgánico",
-      453,
-      12,
-      0.03311258181929588
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Analista Funcional Core Bancario en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "14/01/2026",
-      "Orgánico",
-      593,
-      38,
-      0.06745362281799316
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Analista Funcional Jr en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "13/01/2026",
-      "Orgánico",
-      873,
-      89,
-      0.10309278219938278
-    ],
-    [
       "Buscamos personal (#hiring) para el cargo de Data Engineer (W-ID-0183) en Bogota, D.C., Capital District. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "23/12/2025",
       "Orgánico",
-      420,
+      459,
       17,
-      0.04523809626698494
+      0.04139433428645134
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Analista Tributario Jr. en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "04/12/2025",
       "Orgánico",
-      259,
+      290,
       4,
-      0.0154440151527524
+      0.013793103396892548
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Soporte TI (W-ID-0185) en Lima. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "27/11/2025",
       "Orgánico",
-      375,
+      402,
       16,
-      0.05066666752099991
+      0.04726368188858032
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Desarrollador de back-end en Bogota, D.C., Capital District. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "18/11/2025",
       "Orgánico",
-      317,
+      321,
       16,
-      0.05678233504295349
+      0.05607476457953453
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Consultor de desarrollo Organizacional en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "13/11/2025",
       "Orgánico",
-      266,
+      292,
       9,
-      0.03759398311376572
+      0.034246575087308884
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Tecnico o Analista en Practica en Chile. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "22/10/2025",
       "Orgánico",
-      346,
+      373,
       18,
-      0.05202312022447586
+      0.04825737327337265
     ],
     [
       "Buscamos personal (#hiring) para el cargo de DESARROLLADOR SALESFORCE en Argentina. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "21/10/2025",
       "Orgánico",
-      214,
+      243,
       1,
-      0.009345794096589088
+      0.008230452425777912
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Salesforce Developer (ID-0076) en Peru. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "18/10/2025",
       "Orgánico",
-      152,
+      176,
       1,
-      0.00657894741743803
+      0.005681818351149559
     ],
     [
       "Buscamos personal (#hiring) para el cargo de DESARROLLADOR RPA en Peru. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "17/10/2025",
       "Orgánico",
-      168,
+      190,
       4,
-      0.0357142873108387
+      0.031578946858644485
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Desarrollador Salesforce en Lima. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "16/10/2025",
       "Orgánico",
-      165,
+      184,
       1,
-      0.0060606058686971664
+      0.005434782709926367
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Analista de Gobierno y Evolutivo en Bogota, D.C., Capital District. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "15/10/2025",
       "Orgánico",
-      190,
+      209,
       6,
-      0.03684210404753685
+      0.03349282220005989
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Ingeniero Cloud en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "03/10/2025",
       "Orgánico",
-      238,
+      259,
       7,
-      0.042016807943582535
+      0.03861003741621971
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Tech Lead (W-ID-0079) en São Paulo, São Paulo. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "25/09/2025",
       "Orgánico",
-      141,
+      157,
       3,
-      0.021276595070958138
+      0.019108280539512634
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Java Developer (W-ID-0081) en São Paulo, São Paulo. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "24/09/2025",
       "Orgánico",
-      136,
+      154,
       0,
-      0.007352941203862429
+      0.006493506487458944
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Mobile (ID-0076) en São Paulo, São Paulo. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "23/09/2025",
       "Orgánico",
-      138,
+      157,
       1,
-      0.007246376946568489
+      0.006369426846504211
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Solution Architech (W-ID-0070) en São Paulo, São Paulo. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "18/09/2025",
       "Orgánico",
-      120,
+      133,
       0,
-      0.01666666753590107
+      0.015037594363093376
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Analista de Pruebas - QA (Semi Senior) en Bogota, D.C., Capital District. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "17/09/2025",
       "Orgánico",
-      431,
+      449,
       8,
-      0.03016241267323494
+      0.028953230008482933
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Desarrollador C# en Santiago, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "16/09/2025",
       "Orgánico",
-      146,
+      159,
       6,
-      0.04109589010477066
+      0.03773584961891174
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Developer Backend (W-ID-0073) en São Paulo, São Paulo. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "13/09/2025",
       "Orgánico",
-      114,
+      126,
       0,
-      0.0
+      0
     ],
     [
       "Buscamos personal (#hiring) para el cargo de QA (ID-0074) en São Paulo, São Paulo. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "12/09/2025",
       "Orgánico",
-      151,
+      163,
       1,
-      0.01986755058169365
+      0.01840490847826004
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Program Manager Consultant (W-ID-0069) en São Paulo, São Paulo. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "11/09/2025",
       "Orgánico",
-      125,
+      142,
       0,
-      0.0
+      0
     ],
     [
       "Queremos más!!!... Y siempre se puede acercar las oportunidades a quienes hoy pueden ser parte de WorkCapIT!!!\n\nSi conoces a Alguien que pudiera calzar con el perfil, no dudes en compartirlo y si se ajusta a tu perfil, tampoco dudes en participar...\n\nLa lista para residentes de Brazil:\n- Program Management Consultant: https://lnkd.in/eiwUJKzc\n- Strategy & Transformation Consultant: https://lnkd.in/evmwjUZK \n- Business Experimentation Consultant: https://lnkd.in/epY6F2je\n- Performance Analytics Consultant: https://lnkd.in/eSQS44Zh\n- Marketing Consultant: https://lnkd.in/eJQzGCSc\n- Solutions Architect: https://lnkd.in/enKTrKBR\n- Android Developer: https://lnkd.in/euMr7QVj\n- iOS Developer: https://lnkd.in/eDaySCaz\n- QA: https://lnkd.in/e6SkmtUP\n- Backend Developer (Java): https://lnkd.in/eQqBce5S\n- Backend Developer (.Net): https://lnkd.in/eM2uFtKQ\n- Frontend Developer: https://lnkd.in/eRfTVBSZ\n\nLista de otros paises:\nPerú - Analista Programador: https://lnkd.in/eas_Q2qx\nLATAM - Data Engineer: https://lnkd.in/e9MvNPph\n\nYa volveremos con mas...\n\n#HayPega",
       "10/09/2025",
       "Orgánico",
-      919,
-      33,
-      0.05223068594932556
+      967,
+      38,
+      0.054808687418699265
     ],
     [
       "Buscamos personal (#hiring) para el cargo de Ingeniero de datos en Lima. Solicita hoy el empleo o comparte esta publicación con tu red.",
       "04/09/2025",
       "Orgánico",
-      199,
+      215,
       6,
-      0.035175878554582596
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Analista Programador (W-ID-0054) en Lima. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "12/08/2025",
-      "Orgánico",
-      329,
-      6,
-      0.024316109716892242
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Data Engineer (W-ID-0038) en Ecuador. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "01/08/2025",
-      "Orgánico",
-      277,
-      10,
-      0.03971119225025177
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Data Engineer (W-ID-0038) en Chile. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "31/07/2025",
-      "Orgánico",
-      220,
-      10,
-      0.04545454680919647
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Data Engineer (W-ID-0038) en Colombia. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "30/07/2025",
-      "Orgánico",
-      202,
-      9,
-      0.0445544570684433
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Practicante de Marketing en Chile. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "29/07/2025",
-      "Orgánico",
-      226,
-      11,
-      0.048672568053007126
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Analista Programador en Ate. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "11/07/2025",
-      "Orgánico",
-      365,
-      21,
-      0.06301369518041611
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Soporte TI (W-ID-0053) en Quilicura, Santiago Metropolitan Region. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "26/06/2025",
-      "Orgánico",
-      461,
-      22,
-      0.058568328619003296
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Desarrollador de Software Full Stack en Bogota, D.C., Capital District. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "19/06/2025",
-      "Orgánico",
-      314,
-      6,
-      0.019108280539512634
-    ],
-    [
-      "Buscamos personal (#hiring) para el cargo de Desarrollador Fullstack (W-ID-0050) en Bogota, D.C., Capital District. Solicita hoy el empleo o comparte esta publicación con tu red.",
-      "14/06/2025",
-      "Orgánico",
-      326,
-      13,
-      0.04907975345849991
+      0.0325581394135952
     ]
   ]
 }

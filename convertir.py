@@ -10,6 +10,10 @@ MESES = [
 ]
 
 
+# =========================================================
+# CONVERTIR VALORES NUMÉRICOS
+# =========================================================
+
 def numero(valor):
     if valor is None or valor == "":
         return 0
@@ -42,7 +46,12 @@ def entero(valor):
     return round(numero(valor))
 
 
+# =========================================================
+# CONVERTIR FECHAS
+# =========================================================
+
 def fecha(valor):
+
     if valor is None or valor == "":
         return None
 
@@ -59,7 +68,9 @@ def fecha(valor):
         "%Y/%m/%d",
         "%m/%d/%Y",
         "%m/%d/%Y %H:%M:%S",
-        "%Y-%m-%d %H:%M:%S"
+        "%Y-%m-%d %H:%M:%S",
+        "%d/%m/%Y",
+        "%d/%m/%Y %H:%M:%S"
     ]
 
     for formato in formatos:
@@ -71,36 +82,67 @@ def fecha(valor):
     return None
 
 
+# =========================================================
+# BUSCAR ENCABEZADOS
+# =========================================================
+
 def buscar_encabezados(ws, requeridos):
+
     for numero_fila, fila in enumerate(
         ws.iter_rows(max_row=15, values_only=True),
         start=1
     ):
+
         valores = [
             str(valor or "").strip()
             for valor in fila
         ]
 
         if all(campo in valores for campo in requeridos):
-            return numero_fila, {
+
+            columnas = {
                 valor: indice + 1
                 for indice, valor in enumerate(valores)
                 if valor
             }
+
+            print(f"Encabezados encontrados en fila {numero_fila}")
+
+            return numero_fila, columnas
 
     raise Exception(
         "No se encontró la fila de encabezados esperada."
     )
 
 
+# =========================================================
+# LEER FILAS
+# =========================================================
+
 def filas(ws, fila_encabezado, columnas):
+
     resultado = []
 
-    for fila in range(fila_encabezado + 1, ws.max_row + 1):
+    # IMPORTANTE:
+    # No usamos ws.max_row porque en read_only puede devolver None.
+    for fila_excel, valores_fila in enumerate(
+        ws.iter_rows(
+            min_row=fila_encabezado + 1,
+            values_only=True
+        ),
+        start=fila_encabezado + 1
+    ):
+
         registro = {}
 
         for nombre, columna in columnas.items():
-            registro[nombre] = ws.cell(fila, columna).value
+
+            indice = columna - 1
+
+            if indice < len(valores_fila):
+                registro[nombre] = valores_fila[indice]
+            else:
+                registro[nombre] = None
 
         if any(
             valor is not None and valor != ""
@@ -111,10 +153,16 @@ def filas(ws, fila_encabezado, columnas):
     return resultado
 
 
+# =========================================================
+# RESUMEN
+# =========================================================
+
 def resumen(registros):
+
     cantidad = len(registros) or 1
 
     return {
+
         "impressions": entero(
             sum(
                 numero(r.get("Impresiones (totales)"))
@@ -131,7 +179,9 @@ def resumen(registros):
 
         "rate": (
             sum(
-                numero(r.get("Tasa de interacción (total)"))
+                numero(
+                    r.get("Tasa de interacción (total)")
+                )
                 for r in registros
             )
             / cantidad
@@ -165,29 +215,31 @@ def resumen(registros):
 
 
 # =========================================================
-# BUSCAR AUTOMÁTICAMENTE EL EXCEL DENTRO DE /reporte
+# BUSCAR AUTOMÁTICAMENTE EL EXCEL
 # =========================================================
 
-if not os.path.exists("reporte"):
-    raise Exception(
-        "No existe la carpeta reporte/."
-    )
+print("====================================")
+print("Iniciando conversión del Excel")
+print("====================================")
 
 
 archivos = [
     nombre
     for nombre in os.listdir("reporte")
-    if nombre.lower().endswith((".xlsx", ".xlsm"))
+    if nombre.lower().endswith(
+        (".xlsx", ".xlsm")
+    )
 ]
 
 
 if not archivos:
+
     raise Exception(
         "No se encontró ningún archivo Excel dentro de reporte/."
     )
 
 
-# Usamos el archivo modificado más recientemente
+# Usar el archivo modificado más recientemente
 
 archivos.sort(
     key=lambda nombre: os.path.getmtime(
@@ -217,17 +269,27 @@ wb = load_workbook(
 )
 
 
+print("Hojas encontradas:")
+print(wb.sheetnames)
+
+
 # =========================================================
 # HOJA INDICADORES
 # =========================================================
 
 if "Indicadores" not in wb.sheetnames:
+
     raise Exception(
         'No se encontró la hoja "Indicadores".'
     )
 
 
 ws = wb["Indicadores"]
+
+
+print("------------------------------------")
+print("Procesando hoja: Indicadores")
+print("------------------------------------")
 
 
 fila, columnas = buscar_encabezados(
@@ -241,6 +303,10 @@ fila, columnas = buscar_encabezados(
 )
 
 
+print(f"Fila de encabezados: {fila}")
+print(f"Columnas encontradas: {columnas}")
+
+
 indicadores = filas(
     ws,
     fila,
@@ -249,20 +315,28 @@ indicadores = filas(
 
 
 # =========================================================
-# LIMPIAR Y VALIDAR FECHAS
+# FILTRAR FECHAS VÁLIDAS
 # =========================================================
 
-indicadores = [
-    registro
-    for registro in indicadores
-    if fecha(registro.get("Fecha")) is not None
-]
+indicadores_validos = []
 
 
 for registro in indicadores:
-    registro["Fecha"] = fecha(
-        registro["Fecha"]
+
+    fecha_registro = fecha(
+        registro.get("Fecha")
     )
+
+    if fecha_registro is not None:
+
+        registro["Fecha"] = fecha_registro
+
+        indicadores_validos.append(
+            registro
+        )
+
+
+indicadores = indicadores_validos
 
 
 indicadores.sort(
@@ -271,9 +345,16 @@ indicadores.sort(
 
 
 if not indicadores:
+
     raise Exception(
         "La hoja Indicadores no contiene fechas válidas."
     )
+
+
+print(
+    f"Registros de indicadores encontrados: "
+    f"{len(indicadores)}"
+)
 
 
 # =========================================================
@@ -292,14 +373,19 @@ annual = {}
 
 
 for year in years:
+
+    registros_year = [
+        r
+        for r in indicadores
+        if r["Fecha"].year == year
+    ]
+
     annual[str(year)] = resumen(
-        [
-            r
-            for r in indicadores
-            if r["Fecha"].year == year
-        ]
+        registros_year
     )
 
+
+# Resumen de todos los años
 
 annual["all"] = resumen(
     indicadores
@@ -343,77 +429,87 @@ for clave in sorted(grupos.keys()):
     cantidad = len(registros) or 1
 
 
+    # Interacciones totales
+
     interacciones = sum(
+
         numero(
             r.get("Reacciones (total)")
         )
+
         +
+
         numero(
             r.get("Comentarios (totales)")
         )
+
         +
+
         numero(
             r.get("Veces compartido (total)")
         )
+
         for r in registros
     )
 
 
-    months.append(
-        [
-            f"{MESES[month - 1]} {str(year)[-2:]}",
+    months.append([
 
-            year,
+        f"{MESES[month - 1]} {str(year)[-2:]}",
 
-            entero(
-                sum(
-                    numero(
-                        r.get("Impresiones (totales)")
-                    )
-                    for r in registros
-                )
-            ),
+        year,
 
-            entero(
-                sum(
-                    numero(
-                        r.get("Clics (totales)")
-                    )
-                    for r in registros
-                )
-            ),
-
-            entero(
-                interacciones
-            ),
-
-            entero(
-                sum(
-                    numero(
-                        r.get("Comentarios (totales)")
-                    )
-                    for r in registros
-                )
-            ),
-
-            entero(
-                sum(
-                    numero(
-                        r.get("Veces compartido (total)")
-                    )
-                    for r in registros
-                )
-            ),
-
+        entero(
             sum(
                 numero(
-                    r.get("Tasa de interacción (total)")
+                    r.get("Impresiones (totales)")
                 )
                 for r in registros
             )
-            / cantidad
-        ]
-    )
+        ),
+
+        entero(
+            sum(
+                numero(
+                    r.get("Clics (totales)")
+                )
+                for r in registros
+            )
+        ),
+
+        entero(
+            interacciones
+        ),
+
+        entero(
+            sum(
+                numero(
+                    r.get("Comentarios (totales)")
+                )
+                for r in registros
+            )
+        ),
+
+        entero(
+            sum(
+                numero(
+                    r.get("Veces compartido (total)")
+                )
+                for r in registros
+            )
+        ),
+
+        sum(
+            numero(
+                r.get(
+                    "Tasa de interacción (total)"
+                )
+            )
+            for r in registros
+        )
+        / cantidad
+
+    ])
 
 
 # =========================================================
@@ -424,6 +520,11 @@ posts = []
 
 
 if "Todas las publicaciones" in wb.sheetnames:
+
+    print("------------------------------------")
+    print("Procesando hoja: Todas las publicaciones")
+    print("------------------------------------")
+
 
     ws_posts = wb[
         "Todas las publicaciones"
@@ -446,6 +547,12 @@ if "Todas las publicaciones" in wb.sheetnames:
         ws_posts,
         fila_posts,
         columnas_posts
+    )
+
+
+    print(
+        f"Publicaciones encontradas: "
+        f"{len(publicaciones)}"
     )
 
 
@@ -488,36 +595,44 @@ if "Todas las publicaciones" in wb.sheetnames:
             )
 
 
-        posts.append(
-            [
-                titulo,
+        posts.append([
 
-                fecha_texto,
+            titulo,
 
+            fecha_texto,
+
+            publicacion.get(
+                "Tipo de publicación"
+            )
+            or "",
+
+            entero(
                 publicacion.get(
-                    "Tipo de publicación"
+                    "Impresiones"
                 )
-                or "",
+            ),
 
-                entero(
-                    publicacion.get(
-                        "Impresiones"
-                    )
-                ),
-
-                entero(
-                    publicacion.get(
-                        "Clics"
-                    )
-                ),
-
-                numero(
-                    publicacion.get(
-                        "Tasa de interacción"
-                    )
+            entero(
+                publicacion.get(
+                    "Clics"
                 )
-            ]
-        )
+            ),
+
+            numero(
+                publicacion.get(
+                    "Tasa de interacción"
+                )
+            )
+
+        ])
+
+
+else:
+
+    print(
+        'Aviso: no existe la hoja '
+        '"Todas las publicaciones".'
+    )
 
 
 # =========================================================
@@ -525,9 +640,13 @@ if "Todas las publicaciones" in wb.sheetnames:
 # =========================================================
 
 resultado = {
+
     "annual": annual,
+
     "months": months,
+
     "posts": posts
+
 }
 
 
@@ -546,23 +665,53 @@ with open(
 
 
 # =========================================================
-# INFORMACIÓN DE CONTROL
+# CERRAR EXCEL
 # =========================================================
 
+wb.close()
+
+
+# =========================================================
+# RESUMEN FINAL
+# =========================================================
+
+print("")
 print("====================================")
-print("Conversión completada correctamente")
+print("CONVERSIÓN COMPLETADA CORRECTAMENTE")
+print("====================================")
+
 print(f"Archivo: {archivo}")
+
 print(f"Años: {years}")
-print(f"Días: {len(indicadores)}")
-print(f"Meses: {len(months)}")
-print(f"Publicaciones: {len(posts)}")
+
 print(
-    f"Impresiones: {annual['all']['impressions']}"
+    f"Días/registros: "
+    f"{len(indicadores)}"
 )
+
 print(
-    f"Clics: {annual['all']['clicks']}"
+    f"Meses: "
+    f"{len(months)}"
 )
+
 print(
-    f"Interacción: {annual['all']['rate']}"
+    f"Publicaciones: "
+    f"{len(posts)}"
 )
+
+print(
+    f"Impresiones: "
+    f"{annual['all']['impressions']}"
+)
+
+print(
+    f"Clics: "
+    f"{annual['all']['clicks']}"
+)
+
+print(
+    f"Interacción: "
+    f"{annual['all']['rate']}"
+)
+
 print("====================================")

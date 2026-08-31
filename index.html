@@ -47,17 +47,24 @@ button{font:inherit}
 /* ---------- HEADER ---------- */
 .header{
   display:grid;
-  grid-template-columns:170px 1fr auto;
+  grid-template-columns:1fr auto;
+  grid-template-areas:
+    "brand brand"
+    "intro filters";
   align-items:start;
-  gap:24px;
+  gap:12px 24px;
   margin-bottom:28px;
 }
+.header > .brand{grid-area:brand;}
+.header > .intro{grid-area:intro;}
+.header > .filters{grid-area:filters;}
 
 .brand{
   display:flex;
   align-items:flex-start;
   justify-content:flex-start;
-  padding-top:2px;
+  padding:0;
+  margin:0 0 4px;
 }
 
 .brand img{
@@ -370,9 +377,9 @@ td:first-child{
 @media(max-width:1050px){
   .header{
     grid-template-columns:1fr auto;
-  }
-  .brand{
-    grid-column:1/-1;
+    grid-template-areas:
+      "brand brand"
+      "intro filters";
   }
   .filters{margin-top:0}
   .kpis{grid-template-columns:repeat(2,1fr)}
@@ -389,6 +396,9 @@ td:first-child{
     flex-direction:column;
     gap:14px;
   }
+  .brand{order:0}
+  .intro{order:1}
+  .filters{order:2}
 
   .brand img{width:128px}
 
@@ -443,7 +453,7 @@ td:first-child{
       />
     </div>
 
-    <div>
+    <div class="intro">
       <p class="eyebrow">● WORKCAPIT · EXECUTIVE DASHBOARD</p>
       <h1>Medición LinkedIn</h1>
       <p class="subtitle" id="periodSubtitle">Cargando datos...</p>
